@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+
+.envelope {
+    width: 100%;
+    height: 100%;
+    background: #ffccd5; /* Color rosado para el sobre */
+    border: 2px solid #ddd;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.5s;
+    overflow: hidden;
+}
+
+.envelope-cover {
+    width: 100%;
+    height: 50%;
+    background: #ffb3c1; /* Color más oscuro para la tapa del sobre */
+    position: absolute;
+    top: 0;
+    transition: transform 0.5s;
+    transform-origin: top;
+}
+
+.message {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    transition: transform 0.5s;
+}
+
+.message h1 {
+    font-size: 1.5em;
+    margin: 0;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.message .hearts {
+    font-size: 1.5em;
+}
